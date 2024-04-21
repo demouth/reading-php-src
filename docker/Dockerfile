@@ -3,6 +3,7 @@ FROM debian:bookworm-slim
 COPY ["./installer", "/tmp/installer"]
 
 RUN apt update \
+  && chmod u+x ./tmp/installer \
   && ./tmp/installer
 
 COPY ["./php-src", "/usr/local/src/php-src"]
@@ -10,6 +11,7 @@ COPY ["./config.nice", "/usr/local/src/php-src/config.nice"]
 
 RUN cd /usr/local/src/php-src \
   && ./buildconf \
+  && chmod u+x ./config.nice \
   && ./config.nice \
   && make \
   && make install
