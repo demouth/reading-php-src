@@ -7,7 +7,7 @@ gdb でのデバッグが可能です。
 ## メモ
 
 1. この通りに実行する  
-   https://zenn.dev/canalun/articles/go_for_loop_pointer_trap
+   https://zenn.dev/sayu/articles/6fd3a39f6e5d96
 2. コンテナに入る
 
 ```sh
