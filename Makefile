@@ -1,4 +1,4 @@
-BRANCH = PHP-8.3
+BRANCH = PHP-7.4
 
 define copy
 	[ ! -f ${2} ] && { cp ${1} ${2}; :; } || { echo "Already exists: ${2}"; }

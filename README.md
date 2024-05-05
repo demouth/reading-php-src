@@ -11,7 +11,7 @@ gdb でのデバッグが可能です。
 2. コンテナに入る
 
 ```sh
-docker run -it -v `pwd`/src:/usr/local/src/php-src/src  reading-php-src:8.3 /bin/bash
+docker run -it -v `pwd`/src:/usr/local/src/php-src/src  reading-php-src:7.4 /bin/bash
 ```
 
 3. デバッグ実行を開始する

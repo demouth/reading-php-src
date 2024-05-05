@@ -28,7 +28,9 @@ RUN cd $HOME \
   && curl -LO https://git.io/.gdbinit \
   && cat /usr/local/src/php-src/.gdbinit >> $HOME/.gdbinit
 
-RUN pecl channel-update pecl.php.net \
-  && pecl install ast
+# #15 0.931 No releases available for package "pecl.php.net/ast"
+# #15 0.931 install failed
+#RUN pecl channel-update pecl.php.net \
+#  && pecl install ast
 
 WORKDIR /usr/local/src/php-src
